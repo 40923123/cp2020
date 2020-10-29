@@ -1,1 +1,11 @@
+<<<<<<< HEAD
 test
+=======
+def lol_b(num):
+    sum = 0
+    for i in range(1,num+1):
+        sum = sum + i
+    return sum
+sum = lol_b(100)
+print(sum)
+>>>>>>> 993c5499e9a4cad817762d7f6697b58a69fc5cd3
