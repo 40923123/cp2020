@@ -756,5 +756,34 @@
 <p>超文件: <a href="https://www.w3schools.com/html/">https://www.w3schools.com/html/</a> </p>
 <p>bs4: <a href="https://readthedocs.org/projects/beautiful-soup-4/downloads/pdf/latest/">https://readthedocs.org/projects/beautiful-soup-4/downloads/pdf/latest/</a> </p>
 <p>解題參考:<span> </span><a href="https://www.kaggle.com/mdecourse/cp2020-hw2">https://www.kaggle.com/mdecourse/cp2020-hw2</a> </p><h2>HW2之1</h2>
-<h2>HW2之2</h2>
+<p>設計一甲</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import urllib.request
+url = "https://nfulist.herokuapp.com/?semester=1091&amp;courseno=0762"
+cp1a = []
+for line in urllib.request.urlopen(url):
+    cp1a.append(int(line.decode('utf-8').rstrip()))
+print(cp1a)
+print("總共有" + str(len(cp1a)) + " 筆")
+total = len(cp1a)
+for i in range(total):
+    print("http://github.com/" + str(cp1a[i]) + "/cp2020")</pre>
+<p>1. import urllib.request</p>
+<p>    <span class="c1">導入 urllib.request: <a href="https://docs.python.org/3/library/urllib.request.html">https://docs.python.org/3/library/urllib.request.html</a></span></p>
+<p>    並且透過<span class="c1">urllib.request 模組中的 urlopen() 開啟網路 url 連結資料</span></p>
+<p><span class="c1">2. url = "https://nfulist.herokuapp.com/?semester=1091&amp;courseno=0762"</span></p>
+<p><span class="c1">    設定名單的源頭從<span><a href="https://nfulist.herokuapp.com/?semester=1091&amp;courseno=0762這個網址來">https://nfulist.herokuapp.com/?semester=1091&amp;courseno=0762這個網址來</a></span></span></p>
+<p><span class="c1"><span>3.cp1a = []</span></span></p>
+<p><span class="c1"><span>   設定cp1a這個數列</span></span></p>
+<p><span class="c1"><span>4. for line in urllib.request.urlopen(url):<br/>    cp1a.append(int(line.decode('utf-8').rstrip()))</span></span></p>
+<p>    透過 urllib.request模組裡的urlopen()取下網際資料但由於資料為binary格式所以必須使用utf-8進行      編碼將它轉換成我們可看得懂的數字</p>
+<p>5. print(cp1a)</p>
+<p>    顯示cp1a , 由於前面有定義數列了所以cp1a的資料將以數列方式呈現</p>
+<p>6. print("總共有" + str(len(cp1a)) + " 筆")</p>
+<p>    顯示 <span>總共有+字串cp1a的資料數+筆</span></p>
+<p><span>7. total = len(cp1a)</span></p>
+<p><span>    設定total為cp1a資料數</span></p>
+<p><span>8. for i in range(total):<br/>    print("http://github.com/" + str(cp1a[i]) + "/cp2020")</span></p>
+<p>    用迴圈下去跑(total的資料數)相同的次數 </p>
+<p>    並顯示<span>http://github.com/+ cp1a資料裡每個數據 + /cp2020</span></p>
+<p><span><img alt="" height="747" src="/images/gSD0AlEkwh.png" width="917"/></span></p><h2>HW2之2</h2>
 <h2>HW2之3</h2>
