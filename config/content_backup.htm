@@ -7,7 +7,80 @@
 <h1>第一組組員</h1>
 <p><span>Repository: </span><a href="https://github.com/40923102/cp2020">40923102</a><span><span> </span>| Site:<span> </span></span><a href="https://40923102.github.io/cp2020">40923102</a><br/><span>Repository:<span> </span></span><a href="https://github.com/40923103/cp2020">40923103</a><span><span> </span>| Site:<span> </span></span><a href="https://40923103.github.io/cp2020">40923103</a><br/><span>Repository:<span> </span></span><a href="https://github.com/40923117/cp2020">40923117</a><span><span> </span>| Site:<span> </span></span><a href="https://40923117.github.io/cp2020">40923117</a><br/><span>Repository:<span> </span></span><a href="https://github.com/40923119/cp2020">40923119</a><span><span> </span>| Site:<span> </span></span><a href="https://40923119.github.io/cp2020">40923119</a><br/><span>Repository:<span> </span></span><a href="https://github.com/40923123/cp2020">40923123</a><span><span> </span>| Site:<span> </span></span><a href="https://40923123.github.io/cp2020">40923123</a><br/><span>Repository:<span> </span></span><a href="https://github.com/40923127/cp2020">40923127</a><span><span> </span>| Site:<span> </span></span><a href="https://40923127.github.io/cp2020">40923127</a> <br/><span>Repository:<span> </span></span><a href="https://github.com/40923131/cp2020">40923131</a><span><span> </span>| Site:<span> </span></span><a href="https://40923131.github.io/cp2020">40923131</a><br/><span>Repository:<span> </span></span><a href="https://github.com/40923133/cp2020">40923133</a><span><span> </span>| Site:<span> </span></span><a href="https://40923133.github.io/cp2020">40923133</a><br/><span>Repository:<span> </span></span><a href="https://github.com/40923141/cp2020">40923141</a><span><span> </span>| Site:<span> </span></span><a href="https://40923141.github.io/cp2020">40923141</a><br/><span>Repository:<span> </span></span><a href="https://github.com/40923144/cp2020">40923144</a><span><span> </span>| Site:<span> </span></span><a href="https://40923144.github.io/cp2020">40923144</a><br/><span>Repository:<span> </span></span><a href="https://github.com/40923148/cp2020">40923148</a><span><span> </span>| Site:<span> </span></span><a href="https://40923148.github.io/cp2020">40923148</a><br/><span>Repository:<span> </span></span><a href="https://github.com/40923149/cp2020">40923149</a><span><span> </span>| Site:<span> </span></span><a href="https://40923149.github.io/cp2020">40923149</a></p>
 <h1>git指令表</h1>
-<h1>HW1</h1>
+<ul>
+<li>
+<p><code class="highlighter-rouge">git init</code></p>
+<p>建立新的本地端 Repository。</p>
+</li>
+<li>
+<p><code class="highlighter-rouge">git clone [Repository URL]</code></p>
+<p>複製遠端的 Repository 檔案到本地端。</p>
+</li>
+<li>
+<p><code class="highlighter-rouge">git status</code></p>
+<p>檢查本地端檔案異動狀態。</p>
+</li>
+<li>
+<p><code class="highlighter-rouge">git add [檔案或資料夾]</code></p>
+<p>將指定的檔案（或資料夾）加入版本控制。用<span> </span><code class="highlighter-rouge">git add .</code><span> </span>可加入全部。</p>
+</li>
+<li>
+<p><code class="highlighter-rouge">git commit</code></p>
+<p>提交（commit）目前的異動。</p>
+</li>
+<li>
+<p><code class="highlighter-rouge">git commit -m "提交說明內容"</code></p>
+<p>提交（commit）目前的異動並透過<span> </span><code class="highlighter-rouge">-m</code><span> </span>參數設定摘要說明文字。</p>
+</li>
+<li>
+<p><code class="highlighter-rouge">git stash</code></p>
+<p>獲取目前工作目錄的 dirty state，並保存到一個未完成變更的 stack，以方便隨時回復至當初的 state。</p>
+</li>
+<li>
+<p><code class="highlighter-rouge">git log</code></p>
+<p>查看先前的 commit 記錄。</p>
+</li>
+<li>
+<p><code class="highlighter-rouge">git push</code></p>
+<p>將本地端 Repository 的 commit 發佈到遠端。</p>
+</li>
+<li>
+<p><code class="highlighter-rouge">git push origin [BRANCH_NAME]</code></p>
+<p>發佈至遠端指定的分支（Branch）</p>
+</li>
+<li>
+<p><code class="highlighter-rouge">git branch</code></p>
+<p>查看分支。</p>
+</li>
+<li>
+<p><code class="highlighter-rouge">git branch [BRANCH_NAME]</code></p>
+<p>建立分支。</p>
+</li>
+<li>
+<p><code class="highlighter-rouge">git checkout [BRANCH_NAME]</code></p>
+<p>取出指定的分支。</p>
+</li>
+<li>
+<p><code class="highlighter-rouge">git checkout -b [BRANCH_NAME]</code></p>
+<p>建立並跳到該分支。</p>
+</li>
+<li>
+<p><code class="highlighter-rouge">git branch -D [BRANCH_NAME]</code></p>
+<p>強制刪除指定分支（須先切換至其他分支再做刪除）。</p>
+</li>
+<li>
+<p><code class="highlighter-rouge">git reset --hard [HASH]</code></p>
+<p>強制恢復到指定的 commit（透過 Hash 值）。</p>
+</li>
+<li>
+<p><code class="highlighter-rouge">git checkout [HASH]</code></p>
+<p>切換到指定的 commit（與<span> </span><code class="highlighter-rouge">git checkout [BRANCH_NAME]</code><span> </span>相同)。</p>
+</li>
+<li>
+<p><code class="highlighter-rouge">git branch -m &lt;OLD_BRANCH_NAME&gt; &lt;NEW_BRANCH_NAME&gt;</code></p>
+<p>修改分支名稱。</p>
+</li>
+</ul><h1>HW1</h1>
 <p>PC Hardware</p>
 <p>UNIT 1: Succeeding in PC Hardware (40923123) <span style="color: #ff0000;">(OK)</span><br/>UNIT 2: Hardware Basics <br/>PCH 1: The Basics (40923123) <span style="color: #ff0000;">(OK)</span><br/>PCH 2: Procedures and Safety (40923123) <span style="color: #ff0000;">(OK)</span><br/>PCH 3: Customer Relations (40923123) <span style="color: #ff0000;">(OK)</span><br/>UNIT 3: Hardware Components<br/>PCH 4: Cases, Form Factors, and Power Supplies (40923102)<br/>PCH 5: Motherboards, Expansion Buses, and Processors (40923103)<br/>PCH 6: Memory and BIOS (40923117)<br/>PCH 7: Expansion Cards, Audio, Video, and Storage (40923119)<br/>PCH 8: Cooling (40923127) <span style="color: #ff0000;">(ok)</span><br/>UNIT 4: Networking and Internet <br/>PCH 9: Networking Overview (40923102)<br/>PCH 10: Networking Hardware (40923103)<br/>PCH 11: Networking Media (40923131) <span style="background-color: #ffffff; color: #ff0000;">(OK)</span><br/>PCH 12: Ethernet Standards (40923133) <span style="color: #ff0000;">(OK)</span><br/>PCH 13: IPv4 and IPv6 Addresses (40923141)<br/>PCH 14: TCP and UDP Protocols (40923144)<br/>PCH 15: Introduction to Wireless Networking (40923148) <span style="color: #ff0000;">(OK)</span><br/>PCH 16: Internet Connectivity (40923131) <span style="color: #ff0000;">(OK)</span><br/>UNIT 5: Notebooks and Laptops <br/>PCH 17: Notebook Features and Components (40923149)<br/>PCH 18: Laptop and Notebook Component Replacement (40923127) <span style="color: #ff0000;">(OK)</span><br/>PCH 19: Notebook Power and Physical Security (40923149)</p>
 <h4>有關作業一:</h4>
