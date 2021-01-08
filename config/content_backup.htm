@@ -786,7 +786,14 @@
 <p>python的關鍵字一共有33個</p>
 <p><img alt="" height="240" src="/images/I3NmOzP66e.png" width="555"/></p>
 <p>每一項都擁有不一樣的功能如下表(自行整理如有錯誤或版本問題會持續更新)</p>
-<h3>input</h3><h3>print</h3>
+<h3>input</h3>
+<p><span>Sometimes we would like to take the value for a variable from the user via their keyboard. Python provides a built-in function called </span><code>input</code><span><span> </span>that gets input from the keyboard</span><a class="footnoteRef" href="https://books.trinket.io/pfe/02-variables.html#fn1" id="fnref1"><sup>1</sup></a><span>. When this function is called, the program stops and waits for the user to type something. When the user presses<span> </span></span><code>Return</code><span><span> </span>or<span> </span></span><code>Enter</code><span>, the program resumes and<span> </span></span><code>input</code><span><span> </span>returns what the user typed as a string.</span></p>
+<p>簡單來說有時候會出現需要根據輸入不一樣的字 , 而產生一些不一樣的功用</p>
+<ol>
+<li>目前想到有你在遊戲裡輸入名字而接下來的劇情顯示名字則會一直出現這個名字</li>
+</ol>
+<p><img alt="" height="165" src="/images/lJkUFNvmiq.png" width="521"/></p>
+<p>(此文暫時到這如有新內容則會進行更新)</p><h3>print</h3>
 <p>print為顯示可以顯示訊息或這是數字</p>
 <p><img caption="false" height="154" src="/images/SX6YSIg77e.png" width="724"/></p>
 <p>而顯示的數字是可以在裡面放上<strong>+</strong>的符號會根據數字或字串的不同而有不一樣的顯示</p>
@@ -809,8 +816,14 @@
 <h2>6 usb的問題總結</h2>
 <p>目前測試首先如果將cmsimde放置在usb內適用usb本身進行啟動 , 而usb的品質優良貌似會影響到啟動速度以及資料保障的問題 , 並且須注意使用時必須將usb取出時要使用安全取出  , 已發生因未安全退出而產身標題錯亂以及代碼轉換成亂碼等狀況 , 由於從其他協同者或其他的編輯器都可使用所以證明並不是內部程式問題 , 所以建議usb要慎選 , 出現問題的usb是便宜貨內容64GB: 100~200元 , 但我自己另一個16GB: 249元卻跑起來比前面的還順 , 所以暫時先結案</p>
 <p></p>
-<h2>7</h2>
-<h1>教學歷程</h1>
+<h2>7 同學大部分的問題和集 舊版</h2>
+<ol>
+<li>主要是data/home/.gitconfig裡的proxy分不清楚環境甚麼時候要開甚麼時候要關</li>
+<li>有些人並未檢查源頭是從誰的帳號clone下來導致在push時顯示帳號錯誤</li>
+<li>在使用的方式下ppk但沒有在正確的環境去Push導致無法push</li>
+<li>分支錯亂 有些人可能太久沒更新或是usb的使用方法不當導致在讀取分支錯亂</li>
+<li></li>
+</ol><h1>教學歷程</h1>
 <h2>W1至W8</h2>
 <p>1.網路的一些性質及介紹等(proxy,ipv6,ipv4等) 2.利用kaggle進行網路上的程式編寫練習 3.Github,gitter,Heroku,等之間的使用方法及目的: 基本來說利用USB或者電腦本身進行寫程式(近端)，不只讓他保存並將其推到網路上(遠端)以實現多重保障並也能讓其他人觀看自己的作品，方便之後若有需要時不會發生資料遺漏或者資料不小心遺失也能搶救。</p>
 <h2>W8 test</h2>
@@ -867,3 +880,16 @@ for i in range(total):
 <p><span><img alt="" height="747" src="/images/gSD0AlEkwh.png" width="917"/></span></p>
 <h2>HW2之2</h2>
 <h2>HW2之3</h2>
+<h1>同學的問題集中串</h1>
+<p style="text-align: center;">目前幫助人數接近20人不等</p>
+<ol>
+<li>主要是data/home/.gitconfig裡的proxy分不清楚環境甚麼時候要開甚麼時候要關</li>
+<li>有些人並未檢查源頭是從誰的帳號clone下來導致在push時顯示帳號錯誤</li>
+<li>在使用的方式下ppk但沒有在正確的環境去Push導致無法push</li>
+<li>分支錯亂 有些人可能太久沒更新或是usb的使用方法不當導致在讀取分支錯亂</li>
+<li>網站轉靜態出現錯誤:主要是標題有出現標點符號或著出現無法讀取資料</li>
+<li>對於啟動新版cmsimde動態網站裡網路位置ipv6以及ipv4的位置及如何教出網路位置詳細情形不清楚</li>
+<li>推上去沒有綠勾勾 主要是可能是太久沒推或是cmsimde沒有更新至最新</li>
+<li>近端遠端的內容並不統一 解決方法為git pull把遠端多的資料給拉下再重推或者把做的東西先輩分用git checkout回上一個版本</li>
+<li>帳號名稱不是學號...</li>
+</ol>
