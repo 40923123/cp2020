@@ -799,8 +799,19 @@
 <p>而顯示的數字是可以在裡面放上<strong>+</strong>的符號會根據數字或字串的不同而有不一樣的顯示</p>
 <p><img alt="" height="577" src="/images/Fc3mqLvCDl.png" width="1364"/></p>
 <p>如同上圖若是數字(int)則會相加但如果是字串(str)則會變成一起顯示</p>
-<h2>cp2020</h2>
-<h1>問題排除</h1>
+<h2>Dictionary 字典</h2>
+<p>主要是把一群可能是數字,字串,或者其他的東西做出分類並儲存</p>
+<p>例如:</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">game_1 = {'name' : 'lol' , 'year' : '2010' }
+game_2 = dict (name = 'PUBG' , year = '2017') 
+</pre>
+<p><span>建立字典以後，我們可以利用下面的作法來存取 key 的值，也就是透過 key 來取得對應的 value：</span></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">print (game_1['name'])
+print (game_2['year'])</pre>
+<p>執行完如下圖:</p>
+<p><img alt="" height="240" src="/images/5hmuSC6AbH.png" width="1420"/></p>
+<p>簡單來說就是輸入對應的key就會丟給你字典裡相對的資料</p>
+<p></p><h1>問題排除</h1>
 <p>此串為問題存放區以及解決方法的集中串</p>
 <h2>1 heading問題</h2>
 <p>已知heading無法使用標點符號作為標題</p>
@@ -884,7 +895,7 @@ for i in range(total):
 <p><img alt="" height="508" src="/images/ffoa7O6qLc.png" width="700"/></p>
 <p><img alt="" height="625" src="/images/rAXawmAPhQ.png" width="700"/></p>
 <p>以上為我想的到的解決方法,如果已經知道誰的學號和帳號不一樣並確認帳號了話,那就直接建立字典把少數的學號跟帳號給拉出來分別定義,雖然這甚至比自己手動輸入還慢但至少...是用程式去跑的</p>
-<p>先下圖:</p>
+<p>如下圖:</p>
 <p><img alt="" height="429" src="/images/9tRnwEaZiH.png" width="800"/></p>
 <ol>
 <li>首先我先建立名單的超連結檔並將其設定成源頭,並做出假設如果學號40923101和40923102的帳號分別是S40923101以及40923102-2為前提下</li>
@@ -928,6 +939,7 @@ for i in range(total):
 <ol>
 <li>urllib.request能讀得好像不只是http連file都可以'</li>
 <li>迴圈的使用方法</li>
+<li>dict的使用方法</li>
 </ol><h1>同學的問題集中串</h1>
 <p style="text-align: center;">目前幫助人數接近20人不等</p>
 <ol>
